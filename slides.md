@@ -70,7 +70,7 @@ layout: two-cols
 clicks: 5
 ---
 
-# Notes
+# Before we begin
 
 <v-clicks>
 
@@ -90,8 +90,12 @@ clicks: 5
 ::right::
 
 <br/>
-<img src="./images/vscode-qr.png" style="width: 80%;margin:10% auto" v-click=1 v-click.hide="5" >
-<img src="https://c.tenor.com/BravUCrUqT8AAAAd/tenor.gif" v-click="5" style="width: 40%;position:absolute;top:25%;left:55%;"/>
+
+<img src="./images/vscode-qr.png" style="width: 80%;margin:10% auto" v-click=1 v-click.hide="3">
+
+<img src="./images/talks.png" v-click=3 v-click.hide="5" style="width: 40%;position:absolute;top:10%;left:55%;">
+
+<img src="https://c.tenor.com/BravUCrUqT8AAAAd/tenor.gif" v-click="5" style="width: 40%;position:absolute;top:25%;left:55%;">
 
 ---
 layout: two-cols
@@ -327,15 +331,19 @@ threejs stuff
 Application Programming Interface
 
 ```js {monaco-run}
-// "https://dog.ceo/api/breeds/image/random"
+// "https://dog.ceo/api/breed/retriever/golden/images/random"
+
+//
+
+//
 ```
 
 ```html {monaco-run}
-<div id="image" style="width: 200px; height: 200px;background-color:#333"></div>
+<div id="image" style="height: 200px;background-color:#333;display:flex"></div>
 ```
 
 <!--
-const data = await fetch("https://dog.ceo/api/breeds/image/random");
+const data = await fetch("https://dog.ceo/api/breed/retriever/golden/images/random");
 const dog = await data.json();
 const img = document.createElement("img");
 
@@ -380,6 +388,3 @@ document.getElementById("image").appendChild(img);
 <a href="https://twitter.com/ekaansh" target=_blank>x.com/ekaansh</a>
 
 </div>
-
----
-
