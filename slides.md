@@ -7,7 +7,6 @@ zoom: 1.25
 drawings:
   persist: false
 transition: fade
-layout: two-cols
 ---
 
 <br>
@@ -16,16 +15,13 @@ layout: two-cols
 
 <br>
 
-#### Let's build _your_ masterpiece together!
+#### Let's paint _your_ <span v-if="$clicks>0" style="color:#0070f3">masterpiece</span><span v-else>masterpiece</span> together!
 
 <br><br><br><br><br><br>
 <a href="https://twitter.com/ekaansh" target=_blank>@ekaansh</a>
 
-::right::
-
-<br /><br /><br />
 <v-clicks>
-<img src="https://c.tenor.com/sWLizV5Y9zgAAAAC/tenor.gif" />
+<img src="https://c.tenor.com/sWLizV5Y9zgAAAAC/tenor.gif" style="position: absolute;top:30%;left:55%;width: 40%;"/>
 
 </v-clicks>
 
@@ -56,9 +52,9 @@ layout: two-cols
 
 - Developer Advocate Engineer, <a href="https://zoom.us" target=_blank>Zoom</a>
 
-- JavaScript Nerd​
+- Building websites for a decade
 
-- Maker of 3D art and taylor swift metal covers
+- Didn't clear JEE advanced but still at IITD
 
 <br> <br>
 
@@ -235,7 +231,6 @@ show color, background-color, box-shadow, border, padding, margin
       <p>And some more <span>important text</span></p>
       <img
         src="https://pbs.twimg.com/profile_images/1553384187805171712/xjOdl5bz_400x400.jpg"
-        style="width: 80px;"
       />
     </div>
   </body>
@@ -269,7 +264,7 @@ variables, comments, logging, functions, conditionals, loops?
 
 <br>
  
-## On to our code editors!
+## On to your code editors! Follow along!
 
 ---
 
