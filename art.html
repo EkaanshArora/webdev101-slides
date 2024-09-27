@@ -1,0 +1,34 @@
+<body>
+  <h1>Hello World!</h1>
+  <canvas id="canvas" width="1000" height="1000" style="width: 800px; height: 800px;"></canvas>
+  <button id="stop">Stop</button>
+  <script>
+    /**
+    * @type { HTMLCanvasElement }
+    */
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+    let run = true;
+
+    const getRandomColor = () => {
+      return Math.random() * 255;
+    };
+
+    const draw = () => {
+      ctx.fillStyle = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+      ctx.fillRect(
+        Math.random() * 1000,
+        Math.random() * 1000,
+        Math.random() * 100 + 10,
+        Math.random() * 100 + 10
+      );
+      if (run) {
+        requestAnimationFrame(draw);
+      }
+    };
+
+    requestAnimationFrame(draw);
+
+    document.getElementById('stop').onclick = () => (run = false);
+  </script>
+</body>

@@ -2,16 +2,17 @@
 theme: apple-basic
 # colorSchema: "light"
 # highlighter: shiki
-# lineNumbers: false
+lineNumbers: true
 zoom: 1.25
 drawings:
   persist: false
 transition: fade
+layout: two-cols
 ---
 
 <br>
 
-# Build: <span style="color:#3ab9d5">you.com</span>
+# Build _your_ web home
 
 <br>
 
@@ -19,6 +20,14 @@ transition: fade
 
 <br><br><br><br><br><br>
 <a href="https://twitter.com/ekaansh" target=_blank>@ekaansh</a>
+
+::right::
+
+<br /><br /><br />
+<v-clicks>
+<img src="https://c.tenor.com/sWLizV5Y9zgAAAAC/tenor.gif" />
+
+</v-clicks>
 
 ---
 layout: two-cols
@@ -61,33 +70,66 @@ layout: two-cols
 </div>
 
 ---
+layout: two-cols
+clicks: 5
+---
+
+# Notes
+
+<v-clicks>
+
+- we need a code editor
+  <!-- - no you can't use notepad, i mean u can but.. -->
+  <!-- - please just get VS Code -->
+- i speak fast
+  - please ask me to slow down
+- talk vs. workshop
+  - please stop me & ask questions
+- beginner friendly
+  - we'll go over the very basics
+  - i'll also try to showcase some cool things
+
+</v-clicks>
+
+::right::
+
+<br/>
+<img src="./images/vscode-qr.png" style="width: 80%;margin:10% auto" v-click=1 v-click.hide="5" >
+<img src="https://c.tenor.com/BravUCrUqT8AAAAd/tenor.gif" v-click="5" style="width: 40%;position:absolute;top:25%;left:55%;"/>
+
+---
+layout: two-cols
+---
 
 # The Plan
 
-## Demo/showcase
+<br />
 
-- HTML: markup, attrs
-- get text on screen
-- CSS: inline style
-- build a basic hello world portfolio
-- insert embeds for gratification
+<v-clicks>
 
-## let's draw with code (JS)
+- What is a website?
 
-- variables, functions, objects
-- if else
-- loop
-- use draw image as background/somehow
+- How do we build one?
 
-## some API
+- How do we make it look cool?
 
-- access DOM element
-- fetch data
-- insert data to DOM
+- How do we make it do something?
+
+- Sidequest: Let's make some art!
+
+- What's next?
+
+</v-clicks>
+
+::right::
+
+<img src="https://c.tenor.com/aFnZvuhD65kAAAAC/tenor.gif" style="width: 80%;margin:10% auto"/>
 
 ---
 
-<iframe src="https://ekaansharora.com" frameborder="0" width="1600" height="800" style="zoom:0.6"></iframe>
+# What does it take to build a web page?
+
+<iframe src="https://ekaansharora.com" frameborder="0" width="1400" height="700" style="zoom:0.6"></iframe>
 
 ---
 
@@ -126,15 +168,32 @@ _Italic_ = \_text\_
 # HTML
 
 ```html {monaco-run}
+Hello World!
+```
+
+<!--
+show bold, h1, etc
+end tag important
+-->
+
+---
+
+```html {monaco-run}
 <html>
+  <head>
+    <title>things i type here don't show up on the page</title>
+  </head>
   <body>
     Hello World!
   </body>
 </html>
 ```
 
+<small style="position:absolute;bottom:0;color:#333">head, tags, nesting, empty tag: br, attributes: link, img</small>
+
 <!--
-show bold, h1, etc
+show tags, nesting, empty tag<br> img
+show attributes
 -->
 
 ---
@@ -162,8 +221,110 @@ Let's you add some _style_ to your page
 </v-clicks>
 
 <!--
-show colors
+show color, background-color, box-shadow, border, padding, margin
 -->
+
+---
+
+```html {monaco-run}
+<html>
+  <body>
+    <h2>Hello World!</h2>
+    <div>
+      <p>Here's some text</p>
+      <p>And some more <span>important text</span></p>
+      <img
+        src="https://pbs.twimg.com/profile_images/1553384187805171712/xjOdl5bz_400x400.jpg"
+        style="width: 80px;"
+      />
+    </div>
+  </body>
+</html>
+```
+
+---
+
+# more resources
+
+- <a href="https://www.w3schools.com/html/" target=_blank>w3schools</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target=_blank>MDN</a>
+
+---
+
+# Okay but how do we make it do stuff?
+
+## JavaScript
+
+```js {monaco-run}
+// alert("Hello World!");
+```
+
+<!--
+variables, comments, logging, functions, conditionals, loops?
+-->
+
+---
+
+# Let's make some art!
+
+<br>
+ 
+## On to our code editors!
+
+---
+
+# Inspiration
+
+<!--
+canvas sketch examples
+-->
+
+---
+
+# More inspiration
+
+<!--
+threejs stuff
+-->
+
+---
+
+# Embeds
+
+---
+
+# APIs
+
+---
+
+# Questions?
+
+---
+
+# Tips
+
+<v-clicks>
+
+- just make stuff
+- share it
+- "steal" (open-source) code
+- learn fundamentals at some point
+
+</v-clicks>
+
+---
+
+<div style="display: flex; place-items: center;flex-direction: column;">
+
+<br><br><br><br>
+
+# Thank you!
+
+<br>
+
+<a href="https://twitter.com/ekaansh" target=_blank>x.com/ekaansh</a>
+
+</div>
 
 ---
 
