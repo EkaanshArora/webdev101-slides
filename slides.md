@@ -216,9 +216,7 @@ Let's you add some _style_ to your page
 
 </v-clicks>
 
-<!--
-show color, background-color, box-shadow, border, padding, margin
--->
+<small style="position:absolute;bottom:0;color:#333">color, background-color, box-shadow, border, padding, margin</small>
 
 ---
 
@@ -274,28 +272,15 @@ show color, background-color, box-shadow, border, padding, margin
 <small style="position:absolute;bottom:0;color:#333">variables, comments, logging, functions, conditionals, loops</small>
 
 ---
+layout: two-cols
+---
 
 # Let's make some art!
 
-<br>
- 
-## On to your code editors!
-
+<img src="https://c.tenor.com/CAFdHQQ3NS0AAAAd/tenor.gif" />
 <br>
 
-## Follow along!
-
----
-
-# Checkpoint
-
-<br>
-
-## You have all the tools you need!
-
-<br>
-
-## We'll discuss some "less basic" things now
+## On to your code editors, follow along!
 
 ---
 
@@ -313,6 +298,10 @@ show color, background-color, box-shadow, border, padding, margin
 <!--
 threejs stuff
 -->
+
+---
+
+<img src="https://c.tenor.com/i60o0DoB74wAAAAC/tenor.gif" style="position:absolute;top:50%;left:50%;transform:translate(-51%,-51%);" />
 
 ---
 
@@ -356,7 +345,7 @@ document.getElementById("image").appendChild(img);
 
 ---
 
-# Inspiration again
+# Inspiration, again
 
 <!-- <a href="songstellation-3d-production.up.railway.app">Songstellation</a> -->
 <iframe src="https://songstellation-3d-production.up.railway.app/" frameborder="0" width="1400" height="700" style="zoom:0.6"></iframe>
