@@ -237,6 +237,23 @@ show color, background-color, box-shadow, border, padding, margin
 </html>
 ```
 
+<!--
+<html>
+  <body>
+    <h2>Hello World!</h2>
+    <div style="display:flex;">
+      <div>
+      <p>- Here's some text</p>
+      <p>- And some more <span style="color:red">important text</span>.</p>
+      </div>
+      <img style="width:20%;margin-left: 100px"
+        src="https://pbs.twimg.com/profile_images/1553384187805171712/xjOdl5bz_400x400.jpg"
+      />
+    </div>
+  </body>
+</html>
+-->
+
 ---
 
 # more resources
@@ -254,9 +271,7 @@ show color, background-color, box-shadow, border, padding, margin
 // alert("Hello World!");
 ```
 
-<!--
-variables, comments, logging, functions, conditionals, loops?
--->
+<small style="position:absolute;bottom:0;color:#333">variables, comments, logging, functions, conditionals, loops</small>
 
 ---
 
@@ -264,19 +279,36 @@ variables, comments, logging, functions, conditionals, loops?
 
 <br>
  
-## On to your code editors! Follow along!
+## On to your code editors!
+
+<br>
+
+## Follow along!
+
+---
+
+# Checkpoint
+
+<br>
+
+## You have all the tools you need!
+
+<br>
+
+## We'll discuss some "less basic" things now
 
 ---
 
 # Inspiration
 
-<!--
-canvas sketch examples
--->
+<iframe src="https://boxes-five.vercel.app/" frameborder="0" width="1400" height="700" style="zoom:0.6"></iframe>
 
 ---
 
 # More inspiration
+
+<iframe src="https://color-wander.surge.sh/" frameborder="0" width="1400" height="650" style="zoom:0.6"></iframe>
+<p>credit: <a href="https://github.com/mattdesl/color-wander" target=_blank>mattdesl</a></p>
 
 <!--
 threejs stuff
@@ -286,9 +318,48 @@ threejs stuff
 
 # Embeds
 
+```html {monaco-run}
+<iframe
+  style="border-radius: 12px"
+  src="https://open.spotify.com/embed/playlist/2C2rWVmiNMd1M7U2iXI0iW?utm_source=generator&theme=0"
+  width="100%"
+  height="152"
+  frameborder="0"
+  allowfullscreen=""
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy"
+></iframe>
+```
+
 ---
 
 # APIs
+
+Application Programming Interface
+
+```js {monaco-run}
+// "https://dog.ceo/api/breeds/image/random"
+```
+
+```html {monaco-run}
+<div id="image" style="width: 200px; height: 200px;background-color:#333"></div>
+```
+
+<!--
+const data = await fetch("https://dog.ceo/api/breeds/image/random");
+const dog = await data.json();
+const img = document.createElement("img");
+
+img.src = dog.message;
+document.getElementById("image").appendChild(img);
+-->
+
+---
+
+# Inspiration again
+
+<!-- <a href="songstellation-3d-production.up.railway.app">Songstellation</a> -->
+<iframe src="https://songstellation-3d-production.up.railway.app/" frameborder="0" width="1400" height="700" style="zoom:0.6"></iframe>
 
 ---
 
