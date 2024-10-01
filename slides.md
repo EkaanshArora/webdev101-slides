@@ -1,6 +1,6 @@
 ---
 theme: apple-basic
-# colorSchema: "light"
+colorSchema: "light"
 # highlighter: shiki
 lineNumbers: true
 zoom: 1.25
@@ -15,7 +15,7 @@ transition: fade
 
 <br>
 
-#### Let's paint _your_ <span v-if="$clicks>0" style="color:#0070f3">masterpiece</span><span v-else>masterpiece</span> together!
+#### Let's paint _your_ <span v-if="$clicks>0" style="color:#007bff">masterpiece</span><span v-else>masterpiece</span> together!
 
 <br><br><br><br><br><br>
 <a href="https://twitter.com/ekaansh" target=_blank>@ekaansh</a>
@@ -167,7 +167,7 @@ _Italic_ = \_text\_
 
 # HTML
 
-```html {monaco-run}
+```html {monaco-run} {editorOptions:{fontSize: 14}}
 Hello World!
 ```
 
@@ -178,7 +178,7 @@ end tag important
 
 ---
 
-```html {monaco-run}
+```html {monaco-run} {editorOptions:{fontSize: 14}}
 <html>
   <head>
     <title>things i type here don't show up on the page</title>
@@ -210,7 +210,7 @@ show attributes
 
 Let's you add some _style_ to your page
 
-```html {monaco-run}
+```html {monaco-run} {editorOptions:{fontSize: 14}}
 <html>
   <body>
     <h1>Hello World!</h1>
@@ -224,7 +224,7 @@ Let's you add some _style_ to your page
 
 ---
 
-```html {monaco-run}
+```html {monaco-run} {editorOptions:{fontSize: 14}}
 <html>
   <body>
     <h2>Hello World!</h2>
@@ -269,7 +269,7 @@ Let's you add some _style_ to your page
 
 ## JavaScript
 
-```js {monaco-run}
+```js {monaco-run} {editorOptions:{fontSize: 14}}
 // alert("Hello World!");
 ```
 
@@ -311,7 +311,7 @@ threejs stuff
 
 # Embeds
 
-```html {monaco-run}
+```html {monaco-run} {editorOptions:{fontSize: 14}}
 <iframe
   style="border-radius: 12px"
   src="https://open.spotify.com/embed/playlist/2C2rWVmiNMd1M7U2iXI0iW?utm_source=generator&theme=0"
@@ -330,7 +330,7 @@ threejs stuff
 
 Application Programming Interface
 
-```js {monaco-run}
+```js {monaco-run} {editorOptions:{fontSize: 14}}
 // "https://dog.ceo/api/breed/retriever/golden/images/random"
 
 //
@@ -338,7 +338,7 @@ Application Programming Interface
 //
 ```
 
-```html {monaco-run}
+```html {monaco-run} {editorOptions:{fontSize: 14}}
 <div id="image" style="height: 200px;background-color:#333;display:flex"></div>
 ```
 
@@ -360,6 +360,23 @@ document.getElementById("image").appendChild(img);
 
 ---
 
+# SDKs
+
+Software Development Kits
+
+```js {monaco} {editorOptions:{fontSize: 14}}
+// import ZoomVideo from "@zoom/videosdk";
+
+const client = ZoomVideo.createClient();
+await client.join(topic, token, username);
+await mediaStream.startAudio();
+await renderVideo({ action: "Start", userId: userId });
+```
+
+<img src="./images/vsdk.webp" style="width: 60%;margin:2% auto"/>
+
+---
+
 # Questions?
 
 ---
@@ -370,8 +387,8 @@ document.getElementById("image").appendChild(img);
 
 - just make stuff
 - share it
-- "steal" (open-source) code
-- learn fundamentals at some point
+- "steal" open-source code
+- learn fundamentals
 
 </v-clicks>
 
